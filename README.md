@@ -1,4 +1,5 @@
 # fork updater
+[![Build Status](https://travis-ci.org/edofic/fork-updater.png?branch=master)](https://travis-ci.org/edofic/fork-updater)
 
 This is a tool to help you update your forks on github with new commits from upstream. It requires `git` command line tool is installed.
 
