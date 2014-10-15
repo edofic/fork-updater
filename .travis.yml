@@ -1,2 +1,12 @@
 language: haskell
 ghc: 7.8
+deploy:
+  provider: releases
+  api_key:
+    secure: tdHEKPSWJDFX5wsf/RA33D5nBvmMcw46kd0VhHeB1Slao8EpPWfY3p0+AMEQR0Kdg5mFEoMfAfvD8JHz/9FZi9UK9RAhS89wyg0pchKCmjeXoTVVYM156LbcctRwT9pUtZbjmvFEpkLZ0PgmdepBFB/nj8dFdDQTAYj88TITC9E=
+  file: dist/build/fork-updater/fork-updater
+  skip_cleanup: true
+  on:
+    repo: edofic/fork-updater
+    tags: true
+    all_branches: true
