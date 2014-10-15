@@ -16,6 +16,10 @@ And then run fork-updater passing in one parameter to denote the owner of reposi
 
 This will create folder `repos` in current directory and clone all your forks inside. It will also add remotes for the upstream and fetch from parents. Then it will use `git log` to display commits that are on the upstream but not on the fork for each component.
 
+## Prebuilt binaries
+
+Prebuild binaries for 64 bit linux are available on the [releases page](https://github.com/edofic/fork-updater/releases).
+
 ## Building
 
 Standard cabal build
@@ -24,5 +28,5 @@ Standard cabal build
 
 ## TODO
 
-- prebuilt binaries
+- auto upx binaries during build
 - refactoring into more idiomatic Haskell
